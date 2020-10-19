@@ -1,0 +1,69 @@
+.waveko-v2{
+  header.waveko_header{
+    // Base
+    .waveko-logo{
+      background-image: url('../assets/images/logo-dark-alt.svg');
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 48px;
+
+    }
+    li{
+      font-family: waveko-med;
+    }
+    // Layout
+    .waveko_header__top-bar{
+      background-color: #222;
+      .waveko_header-nav--secondary{
+        display: flex;
+        justify-content: space-between;
+        li{
+          list-style: none;
+          color: $slate-lighter;
+          font-size: 10px;
+        }
+      }
+
+    }
+    .waveko_header__main{
+      background: $dark;
+      .menu-waveko-global-primary-container{
+        width: 100%;
+        .waveko_header-nav--primary{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-bottom: 0;
+          margin: 0;
+          padding: 0;
+          li{
+            list-style: none;
+            font-size: 14px;
+            a{
+              color: #fff;
+            }
+          }
+         }
+      }
+
+    }
+    &.waveko_header--transparent{
+      .waveko_header__main{
+        background-color: transparent;
+      }
+
+    }
+    // Utilities
+    li.link-soon{
+      opacity: .4;
+      &:after{
+        content: "(Soon)";
+        font-weight: 100;
+        font-family: waveko-light;
+      }
+
+    }
+  }
+
+}

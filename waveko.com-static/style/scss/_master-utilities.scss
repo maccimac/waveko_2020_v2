@@ -1,0 +1,109 @@
+/* UTILITIES */
+
+/* Separators */
+.separator-bot{
+  margin-bottom: -32px;
+}
+
+.wave-light-gray{
+  background-image: url('../assets/images/wave-light-gray-blue.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 15vw;
+  /* margin-top: -120px; */
+}
+
+.wave-white{
+  background: url('../assets/images/wave-white.svg');
+  background-size: cover;
+}
+.wave-gray{
+  background: url('../assets/images/wave-light-gray.svg');
+  background-size: cover;
+}
+
+.image-cover{
+  background-size: cover;
+  background-position: center;
+}
+
+
+.waveko-shadow{
+  box-shadow: 0 24px 32px #666;
+}
+
+
+/* Text Color and Size*/
+.text-lime{
+  color: $lime;
+}
+.text-gray-navy{
+  color: #98ACAA !important
+}
+.text-navy{
+  color: #044D71 !important;
+}
+.text-black{
+  color: #222 !important
+}
+.text-light{
+  color: #E7F0F5 !important
+}
+.text-waveko-reg{
+  font-family: waveko-reg;
+}
+.text-waveko-med{
+  font-family: waveko-med;
+}
+.text-waveko-strong{
+  font-family: waveko-bold;
+}
+
+/* Spacing */
+.font-18{
+  font-size: 18px;
+}
+.font-24{
+  font-size: 24px;
+}
+.font-32{
+  font-size: 32px;
+}
+
+.mh-16{
+  min-height: 16px;
+}
+.mh-24{
+  min-height: 24px;
+}
+.mh-32{
+  min-height: 32px;
+}
+.mh-48{
+  min-height: 48px;
+}
+.mh-64{
+  min-height: 64px;
+}
+.mh-120{
+  min-height: 120px;
+}
+.mh-160{
+  min-height: 160px;
+}
+.mh-240{
+  min-height: 240px;
+}
+.mh-320{
+  min-height: 320px;
+}
+.mh-360{
+  min-height: 360px;
+}
+.mh-420{
+  min-height: 420px;
+}
+.mh-600{
+  min-height: 600px;
+}

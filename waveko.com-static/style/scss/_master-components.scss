@@ -1,0 +1,88 @@
+
+/* COMPONENTS */
+/* Component: Buttons */
+.btn{
+  font-family: waveko-bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+
+  //Sizes
+  &.btn-lg{
+    font-size: 16px;
+  }
+
+  //Color
+  &.btn-waveko-navy-outline{
+    background-color: #fff;
+    border: 1px solid $navy;
+    color: $navy;
+  }
+  &.btn-waveko-black{
+    color: #fff;
+    background-color: #222;
+    font-size: 18px;
+  }
+  &.btn-waveko-black:hover{
+    color: #BBD630;
+    border: 1px solid #BBD630;
+  }
+  &.btn-waveko-lime{
+    // padding: 24px;
+    color: #222;
+    background-color: #BBD630;
+    font-family: waveko-bold;
+    // font-size: 18px;
+    border:none;
+  }
+  &.btn-waveko-lime:hover, &.btn-waveko-lime:active{
+    color: #fff;
+    background-color: #333;
+    font-family: waveko-bold;
+    border:none;
+  }
+
+}
+
+
+/* Components: Badge Pill */
+.badge{
+  font-size: 13px;
+  padding: 6px 12px;
+  font-weight: normal;
+  border-radius: 32px;
+  display: inline-flex;
+  width: auto;
+  align-items: center;
+  justify-content: center;
+
+  &.badge-sm{
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    font-family: waveko-bold !important;
+  }
+
+  &.badge-waveko-lime{
+    font-family: waveko-med;
+    background-color: #BBD630;
+    color: #222;
+  }
+
+  &.badge-waveko-black{
+    font-family: waveko-med;
+    background-color: #222;
+    color: #fff;
+  }
+
+  &.badge-waveko-light{
+    font-family: waveko-med;
+    background-color: #E7F0F5;
+    color: #8DA2A0;
+  }
+  &.badge-waveko-navy{
+    font-family: waveko-med;
+    font-weight: normal;
+    background-color: #044D71;
+    color: #fff;
+  }
+}

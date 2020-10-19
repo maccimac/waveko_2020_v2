@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WaveKo Home</title>
+    <link rel="stylesheet" href="./style/vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/vendors/slick/slick.css">
+    <link rel="stylesheet" href="./style/vendors/slick/slick-theme.css">
+    <link rel="stylesheet" href="./style/master.css">
+    <script src="https://kit.fontawesome.com/be1062ffe4.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body class="waveko-v2">
+    <main>
+      <section class="home__atf p-0">
+
+        <header class="waveko_header container-fluid d-flex flex-column waveko_header--transparent">
+          <!-- <?php if(is_front_page()){ echo "waveko_header--transparent"; }?> -->
+          <div class="waveko_header__main row order-2 p-1 py-3 d-flex justify-content-between">
+            <div class="col-md-3">
+              <a href="<?php echo get_home_url();?> " class="waveko-logo d-block w-100">
+                &nbsp;
+              </a>
+            </div>
+
+            <div class="col-md-4 d-flex align-items-center">
+                <!-- <?php
+                  wp_nav_menu(array(
+                    'theme_location' => 'global_primary',
+                    'menu_class' => 'waveko_header-nav--primary'
+                  ))
+                ?> -->
+                <div class="menu-waveko-global-primary-container">
+                  <ul class="waveko_header-nav--primary">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a class="text-gray-navy" href="#">Events and Programs</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-center justify-content-end">
+              <span class="mr-2 text-waveko-med text-lime">
+                <i class="fa fa-shopping-cart"></i>
+                (5)
+                <!-- ( <?php echo WC()->cart->get_cart_contents_count(); ?> ) -->
+              </span>
+              <a href="<?php echo wc_get_cart_url(); ?>" class="go-to-cart btn btn-waveko-lime text-dark px-3">Go To Cart</a>
+            </div>
+          </div>
+          <div class="waveko_header__top-bar row order-1 p-1">
+            <div class="col-md-6 ml-md-auto">
+              <ul class="waveko_header-nav--secondary mb-0">
+                <li class="link-soon">
+                  #UnitedWaves
+                </li>
+                <li>orders@waveko.com</li>
+                <li>(Globe) +63 987 654 3210 / (Smart) +63 987 654 3210</li>
+                <li class="text-lime">
+                  <i class="fa fa-facebook-square"></i>
+                  <i class="fab fa-instagram"></i>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </header>
+
+
+    		<div class="container">
+    			<div class="row">
+
+    				<div class="col-md-9 m-auto text-center py-5">
+              <div class="mh-64">
+              </div>
+              <h1>
+                We are a community-minded <em>surf brand</em> offering well-thought-of, made-with-love <strong>beach products</strong> manufactured thru <em>Filipino craftsmanship</em>.
+              </h1>
+              <h4><a class="text-lime" href="#">About Us</a></h4>
+    				</div>
+
+    			</div>
+
+    		</div>
+    		 <div class="mh-240"></div>
+
+    	</section>
+
+    	<section class="home__announcements">
+    		<div class="wave-top">
+    			<div class="mh-240"></div>
+    		</div>
+    		<div id="homeHeroCarousel" class="home__hero-carousel d-flex">
+          <div class="waveko-card">
+            <div class="card__outter no-banner" style="background-image: url('./assets/images/sample-image-2.jpg') ">
+              <div class="card__inner d-flex align-items-center p-3">
+                <div class="card__content">
+                  <span class="badge badge-waveko-lime badge-sm mb-2">
+                    Event & Programs
+                  </span>
+                  <h3>
+                    Sustainable Livelihood: Your First Business
+                  </h3>
+                  <p class="mb-3">
+                    We are a community-minded surf brand offering well-thought-of, made-with-love beach products manufactured thru Filipino craftsmanship.
+                  </p>
+
+                  <a href="<?php the_permalink();?>" class="btn btn-waveko-navy-outline btn-sm">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+      		</div>
+          <div class="waveko-card">
+            <div class="card__outter no-banner" style="background-image: url('./assets/images/sample-image.jpg') ">
+              <div class="card__inner d-flex align-items-center p-3">
+                <div class="card__content">
+                  <span class="badge badge-waveko-lime badge-sm mb-2">
+                    Blog
+                  </span>
+                  <h3>
+                    The Importance of Reliability Over Talent
+                  </h3>
+                  <p class="mb-3">
+                    We are a community-minded surf brand offering well-thought-of, made-with-love beach products manufactured thru Filipino craftsmanship.
+                  </p>
+
+                  <a href="<?php the_permalink();?>" class="btn btn-waveko-navy-outline btn-sm">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+      		</div>
+          <div class="waveko-card">
+            <div class="card__outter no-banner" style="background-image: url('./assets/images/boardsling-2.jpg') ">
+              <div class="card__inner d-flex align-items-center p-3">
+                <div class="card__content">
+                  <span class="badge badge-waveko-lime badge-sm mb-2">
+                    Product
+                  </span>
+                  <h3>
+                    Surf Snacks
+                  </h3>
+                  <p class="mb-3">
+                    We are a community-minded surf brand offering well-thought-of, made-with-love beach products manufactured thru Filipino craftsmanship.
+                  </p>
+
+                  <a href="<?php the_permalink();?>" class="btn btn-waveko-navy-outline btn-sm">
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      	</div>
+      </section>
+
+      <section class="home__shop mt-5">
+        <div class="mh-64"></div>
+        <div class="shop__intro text-center">
+            <h2>Shop WaveKo</h2>
+        </div>
+        <div class="mh-64"></div>
+        <div class="shop__items d-flex align-items-center">
+          <div class="w-25 p-4 d-flex">
+            <div class="text-center">
+              <h5>Surf, Lounge, & Essentials</h5>
+              <strong>Visit Shop</strong>
+              <strong>Where to find us</strong>
+
+              <div id="" class="">
+                  <strong  id="homeShopCarouselPrev">
+                    <
+                  </strong>
+                  <strong  id="homeShopCarouselNext">
+                    >
+                  </strong>
+
+              </div>
+            </div>
+          </div>
+          <div id="homeShopCarousel" class="items__carousel w-75 d-flex">
+            <div class="waveko-card waveko-card--vertical">
+              <div class="card__outter no-banner" style="background-image: url('./assets/images/boardsling-5.jpg') ">
+                <div class="card__inner d-flex align-items-center p-3">
+                  <div class="card__content">
+                    <span class="badge badge-waveko-lime badge-sm mb-2">
+                      Shop
+                    </span>
+                    <h3>
+                      Board Sling
+                    </h3>
+                    <p class="mb-3">
+                      We are a community-minded surf brand offering well-thought-of, made-with-love beach products manufactured thru Filipino craftsmanship.
+                    </p>
+
+                    <a href="<?php the_permalink();?>" class="btn btn-waveko-navy-outline btn-sm">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+        		</div>
+            <div class="waveko-card waveko-card--vertical">
+              <div class="card__outter no-banner" style="background-image: url('./assets/images/boardsling-4.jpg') ">
+                <div class="card__inner d-flex align-items-center p-3">
+                  <div class="card__content">
+                    <span class="badge badge-waveko-lime badge-sm mb-2">
+                      Shop
+                    </span>
+                    <h3>
+                      Sustainable Livelihood: Your First Business
+                    </h3>
+                    <p class="mb-3">
+                      We are a community-minded surf brand offering well-thought-of, made-with-love beach products manufactured thru Filipino craftsmanship.
+                    </p>
+
+                    <a href="<?php the_permalink();?>" class="btn btn-waveko-navy-outline btn-sm">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+        		</div>
+            <div class="waveko-card waveko-card--vertical">
+              <div class="card__outter no-banner" style="background-image: url('./assets/images/boardsling-3.jpg') ">
+                <div class="card__inner d-flex align-items-center p-3">
+                  <div class="card__content">
+                    <span class="badge badge-waveko-lime badge-sm mb-2">
+                      Shop
+                    </span>
+                    <h3>
+                      Sustainable Livelihood: Your First Business
+                    </h3>
+                    <p class="mb-3">
+                      We are a community-minded surf brand offering well-thought-of, made-with-love beach products manufactured thru Filipino craftsmanship.
+                    </p>
+
+                    <a href="<?php the_permalink();?>" class="btn btn-waveko-navy-outline btn-sm">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+        		</div>
+            <div class="waveko-card waveko-card--vertical">
+              <div class="card__outter no-banner" style="background-image: url('./assets/images/sample-image-2.jpg') ">
+                <div class="card__inner d-flex align-items-center p-3">
+                  <div class="card__content">
+                    <span class="badge badge-waveko-lime badge-sm mb-2">
+                      Event & Programs
+                    </span>
+                    <h3>
+                      Sustainable Livelihood: Your First Business
+                    </h3>
+                    <p class="mb-3">
+                      We are a community-minded surf brand offering well-thought-of, made-with-love beach products manufactured thru Filipino craftsmanship.
+                    </p>
+
+                    <a href="<?php the_permalink();?>" class="btn btn-waveko-navy-outline btn-sm">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+        		</div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="footer p-5 m-0 d-flex align-items-center">
+    <div class="d-inline-block mx-auto text-lime text-center">
+      <h6 class="text-light">WAVEKO.COM / Surf Brand Philippines / <i class="fas fa-copyright"></i> 2020</h6>
+      <div class="d-block">
+        <div class="header__contacts d-flex align-items-center m-auto">
+          <div class="email">
+            <i class="far fa-envelope-open"></i>
+            <span>connect@waveko.com</span>
+          </div>
+          <div class="header__line"></div>
+          <div class="mobile">
+            <i class="fas fa-mobile-alt"></i>
+            <span>+63 961 341 0021</span>
+          </div>
+          <div class="header__line"></div>
+          <div class="social-media">
+            <a href="https://www.facebook.com/wavekoph" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://instagram.com/waveko_ph" target="_blank"><i class="fab fa-instagram"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+    </main>
+
+    <!-- js vendors -->
+    <script type="text/javascript" src="./js/vendors/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="./js/vendors/slick/slick.min.js"></script>
+
+    <!-- js waveko -->
+    <script type="text/javascript" src="./js/waveko-master.js"></script>
+
+  </body>
+
+
+</html>
