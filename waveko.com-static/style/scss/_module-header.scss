@@ -7,7 +7,8 @@
       background-position: center;
       background-repeat: no-repeat;
       min-height: 48px;
-
+      min-width: 200px;
+      display: block;
     }
     li{
       font-family: waveko-med;
@@ -22,6 +23,7 @@
           list-style: none;
           color: $slate-lighter;
           font-size: 10px;
+          margin: 0 0.5rem;
         }
       }
 

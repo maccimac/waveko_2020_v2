@@ -301,8 +301,6 @@ strong {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 48px;
-  min-width: 200px;
-  display: block;
 }
 .waveko-v2 header.waveko_header li {
   font-family: waveko-med;
@@ -318,7 +316,6 @@ strong {
   list-style: none;
   color: #B9CECC;
   font-size: 10px;
-  margin: 0 0.5rem;
 }
 .waveko-v2 header.waveko_header .waveko_header__main {
   background: #222;
