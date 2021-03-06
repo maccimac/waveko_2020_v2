@@ -48,6 +48,16 @@
           }
          }
       }
+      .navbar-toggler, .navbar-toggler:focus{
+        color: $turquoise;
+        border: 0;
+        border-color: transparent;
+        box-shadow: none;
+      }
+      .navbar-toggler:focus{
+        color: $sea-mid;
+
+      }
 
     }
     &.waveko_header--transparent{

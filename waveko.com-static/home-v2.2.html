@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style/vendors/slick/slick.css">
     <link rel="stylesheet" href="./style/vendors/slick/slick-theme.css">
     <link rel="stylesheet" href="./style/master.css">
+
     <script src="https://kit.fontawesome.com/be1062ffe4.js" crossorigin="anonymous"></script>
 
   </head>
@@ -26,7 +27,8 @@
               </div>
 
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-align-right"></i>
               </button>
 
               <div class="menu-waveko-global-primary-container collapse navbar-collapse" id="navbarSupportedContent">
@@ -182,27 +184,39 @@
         <div class="mh-64"></div>
         <div class="shop__intro text-center">
             <h2>Shop WaveKo</h2>
+            <div class="w-100 d-flex d-lg-none justify-content-center">
+              <div class="text-center">
+                <h5>Surf, Lounge, & Essentials</h5>
+                <strong><a href="#">Visit Shop</a></strong>
+                &nbsp;
+                <strong><a href="#">Where to find us</a></strong>
+              </div>
+            </div>
+
+
         </div>
         <div class="mh-64"></div>
+
         <div class="shop__items d-flex align-items-center">
-          <div class="w-25 p-4 d-flex">
+          <div class="shop__items__description w-25 p-4 d-none d-lg-flex">
             <div class="text-center">
               <h5>Surf, Lounge, & Essentials</h5>
-              <strong>Visit Shop</strong>
-              <strong>Where to find us</strong>
-
-              <div id="" class="">
-                  <strong  id="homeShopCarouselPrev">
-                    <
-                  </strong>
-                  <strong  id="homeShopCarouselNext">
-                    >
-                  </strong>
+              <strong><a href="#">Visit Shop</a></strong>
+              &nbsp;
+              <strong><a href="#">Where to find us</a></strong>
+              <div id="" class="w-100 d-flex justify-content-center">
+                  <span  id="homeShopCarouselPrev" class="shop-items__arrow p-3">
+                    <i class="fas fa-arrow-left"></i>
+                  </span>
+                  <span  id="homeShopCarouselNext" class="shop-items__arrow p-3">
+                    <i class="fas fa-arrow-right"></i>
+                  </span>
 
               </div>
             </div>
           </div>
-          <div id="homeShopCarousel" class="items__carousel w-75 d-flex">
+
+          <div id="homeShopCarousel" class="shop__items__carousel d-flex">
             <div class="waveko-card waveko-card--vertical">
               <div class="card__outter no-banner" style="background-image: url('./assets/images/boardsling-5.jpg') ">
                 <div class="card__inner d-flex align-items-center p-3">
@@ -294,7 +308,7 @@
 
       </section>
 
-      <section class="footer p-5 m-0 d-flex align-items-center">
+      <section class="footer p-5 mt-5 mb-0 d-flex align-items-center">
     <div class="d-inline-block mx-auto text-lime text-center">
       <h6 class="text-light">WAVEKO.COM / Surf Brand Philippines / <i class="fas fa-copyright"></i> 2020</h6>
       <div class="d-block">

@@ -84,3 +84,19 @@ span{
 strong{
   color: #222;
 }
+
+@media (max-width: 992px){
+  h1, h2, h3{
+    font-size: 22px;
+    .entry-title{
+      font-size: 24px;
+    }
+    .excerpt{
+      font-size: 16px;
+    }
+  }
+  p{
+    font-size: 12px;
+  }
+
+}

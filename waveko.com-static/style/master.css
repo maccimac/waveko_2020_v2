@@ -91,6 +91,21 @@ strong {
   color: #222;
 }
 
+@media (max-width: 992px) {
+  h1, h2, h3 {
+    font-size: 22px;
+  }
+  h1 .entry-title, h2 .entry-title, h3 .entry-title {
+    font-size: 24px;
+  }
+  h1 .excerpt, h2 .excerpt, h3 .excerpt {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
 /* COMPONENTS */
 /* Component: Buttons */
 .btn {
@@ -341,6 +356,15 @@ strong {
 .waveko-v2 header.waveko_header .waveko_header__main .menu-waveko-global-primary-container .waveko_header-nav--primary li a {
   color: #fff;
 }
+.waveko-v2 header.waveko_header .waveko_header__main .navbar-toggler, .waveko-v2 header.waveko_header .waveko_header__main .navbar-toggler:focus {
+  color: #6BC8C1;
+  border: 0;
+  border-color: transparent;
+  box-shadow: none;
+}
+.waveko-v2 header.waveko_header .waveko_header__main .navbar-toggler:focus {
+  color: #007496;
+}
 .waveko-v2 header.waveko_header.waveko_header--transparent .waveko_header__main {
   background-color: transparent;
 }
@@ -419,6 +443,7 @@ section.footer {
   margin-top: 40%;
   margin-left: 16px;
   margin-right: 16px;
+  text-align: center;
 }
 .waveko-card .card__outter {
   border-radius: 24px;
@@ -439,6 +464,31 @@ section.footer {
   background-image: #fff;
   margin-left: 16px;
 }
+@media (max-width: 767.98px) {
+  .waveko-card {
+    min-width: 90vw;
+  }
+}
+@media (max-width: 575.98px) {
+  .waveko-card {
+    max-width: 480px;
+    min-height: 480px;
+  }
+  .waveko-card .card__outter {
+    background-position: center top;
+  }
+  .waveko-card .card__inner {
+    background-image: linear-gradient(to top, #fff, #fff, rgba(255, 255, 255, 0));
+  }
+  .waveko-card .card__inner .card__content {
+    width: 100%;
+    margin-top: 40%;
+    margin-left: 16px;
+    margin-right: 16px;
+    text-align: center;
+  }
+}
+
 .waveko-v2 .home__atf {
   background-image: url("../assets/images/bg-shaka@2x.jpg");
   background-size: cover;
@@ -480,8 +530,26 @@ section.footer {
   width: 60vw;
   outline: none;
 }
-.waveko-v2 .home__shop .items__carousel .waveko-card {
+.waveko-v2 .home__shop .shop__items__carousel {
+  width: 75%;
+}
+.waveko-v2 .home__shop .shop__items__carousel .waveko-card {
   margin: 0 16px;
+}
+.waveko-v2 .home__shop .shop-items__arrow {
+  color: #007496;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .waveko-v2 .home__shop .shop__items__carousel {
+    width: 100%;
+    margin-left: 1rem;
+  }
+  .waveko-v2 .home__shop .shop__items__carousel .waveko-card {
+    margin: 0 16px;
+    padding-left: 1rem;
+    max-width: 280px;
+  }
 }
 
 .find-me {

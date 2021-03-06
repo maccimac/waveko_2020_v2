@@ -43,11 +43,36 @@
 
   }
   .home__shop{
-    .items__carousel{
+    .shop__items__carousel{
+      width: 75%;
       .waveko-card{
         margin: 0 16px;
       }
     }
+    .shop-items__arrow{
+      color: $sea-mid;
+      cursor: pointer;
+    }
+  }
+
+  // Breakpoint LG
+  @media (max-width: 992px){
+    .home__shop{
+      .shop__items__carousel{
+        width: 100%;
+        margin-left: 1rem;
+        .waveko-card{
+          margin: 0 16px;
+          padding-left: 1rem;
+          max-width: 280px;
+
+        }
+      }
+    }
+
+
+
+
   }
 
 }
