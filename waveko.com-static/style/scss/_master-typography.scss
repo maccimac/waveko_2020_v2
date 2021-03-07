@@ -55,6 +55,10 @@ h3{
   font-family: waveko-bold;
   font-size: 32px;
   color: #222;
+  .excerpt{
+    font-family: waveko-light;
+    color: $slate-lighter ;
+  }
 }
 h4{
   font-family: waveko-bold;
@@ -65,8 +69,8 @@ h5{
   font-family: 'IBM Plex Sans';
   font-style: italic;
   font-weight: bold;
-  font-size: 12px;
-  color: #044D71;
+  font-size: 14px;
+  color: $slate-lighter;
 }
 h6{
   font-family: waveko-bold;
@@ -83,6 +87,10 @@ span{
 }
 strong{
   color: #222;
+}
+
+a{
+  color: $turquoise;
 }
 
 @media (max-width: 992px){

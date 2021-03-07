@@ -29,8 +29,17 @@
         background-size: cover;
         margin-top: -120px;
     }
-    .home__hero-carousel, {
-      margin-top: -120px;
+    .home__hero-carousel__wrapper{
+      margin-top: -160px;
+      .home__hero-carousel__intro{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        line-height: 100%;
+        padding: 8px;
+      }
+    }
+    .home__hero-carousel {
       .waveko-card{
         margin: 0 32px;
       }
@@ -39,6 +48,7 @@
         outline: none;
       }
     }
+
 
 
   }
@@ -57,6 +67,14 @@
 
   // Breakpoint LG
   @media (max-width: 992px){
+    .home__announcements{
+      .home__hero-carousel__wrapper{
+        .home__hero-carousel__intro{
+          justify-content: flex-start;
+        }
+      }
+    }
+
     .home__shop{
       .shop__items__carousel{
         width: 100%;
