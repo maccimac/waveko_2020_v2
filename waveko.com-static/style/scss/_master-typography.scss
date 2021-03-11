@@ -46,24 +46,19 @@ h2{
   font-size: 32px;
   color: #8DA2A0 ;
 }
-h2.excerpt{
-  font-family: waveko-light;
-  font-size: 24px;
-  color: #8DA2A0 ;
-}
 h3{
   font-family: waveko-bold;
-  font-size: 32px;
+  font-size: 26px;
   color: #222;
-  .excerpt{
-    font-family: waveko-light;
-    color: $slate-lighter ;
-  }
 }
 h4{
   font-family: waveko-bold;
-  font-size: 18px;
+  font-size: 22px;
   color: #222;
+}
+.excerpt{
+  font-family: waveko-light;
+  color: $slate-lighter ;
 }
 h5{
   font-family: 'IBM Plex Sans';
@@ -75,7 +70,7 @@ h5{
 h6{
   font-family: waveko-bold;
   /* text-transform: uppercase; */
-  font-size: 13px;
+  font-size: 16px;
   color: #222;
 }
 p{

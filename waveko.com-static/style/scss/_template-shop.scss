@@ -1,0 +1,26 @@
+.waveko-v2{
+  &.waveko-template--shop{
+    section.shop__atf{
+      display: flex;
+      background-color: $sky;
+      min-height: 70vh;
+      background-image: url('../assets/images/wave-white-short.svg');
+      background-size: 100%;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+    }
+    section.shop__atf-2{
+      margin-top: -240px;
+
+    }
+
+  }
+
+  &.waveko-template--shop-single{
+
+  }
+
+  &.waveko-template--shop-all{
+
+  }
+}

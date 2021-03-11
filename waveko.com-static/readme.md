@@ -1,4 +1,4 @@
 To run sass:
-open terminak
+open terminal
 cd [copy this folder full path]
 sass --watch style/scss/master.scss style/master.css

@@ -3,6 +3,11 @@
   display: block;
   // max-width: 50%;
   min-height: 360px;
+  margin-bottom: 24px !important;
+  outline: none;
+  &:hover{
+    box-shadow: 0 12px 12px #ddd;
+  }
   &.waveko-card--vertical{
     //@NOTE: Replicate this in media-query max-width: 960
     max-width: 480px;
@@ -11,6 +16,7 @@
       background-position-x: center;
     }
     .card__inner{
+      background-position-y: top;
       background-image: linear-gradient(to top, #fff, #fff, rgba(255,255,355,0));
       .card__content{
         width: 100%;
@@ -61,44 +67,86 @@
 
   }
 
-@media (max-width: 991.98px) {
-  /*.card__outter{
-    background-size: 100%;
-    background-position: center right;
-  }*/
-  //
+  @media (max-width: 991.98px) {
+    /*.card__outter{
+      background-size: 100%;
+      background-position: center right;
+    }*/
+    //
+  }
+  @media (max-width: 767.98px) {
+    min-width: 90vw;
+    .card__outter{
+      background-size: 100%;
+      background-position-x: 20vw;
+    }
+    .card__inner{
+      background-image: linear-gradient(to right, #fff, #fff, rgba(255,255,355,0));
+    }
+    .card__content{
+      width: 60%;
+    }
+  }
+  @media (max-width: 575.98px) {
+    // @extends &.waveko-card--vertical;
+    max-width: 480px;
+    min-height: 480px;
+    .card__outter{
+      background-size: 100%;
+      background-position-x: center;
+      background-position-y: top
+    }
+    .card__inner{
+      background-image: linear-gradient(to top, #fff, #fff, rgba(255,255,355,0));
+      .card__content{
+        width: 100%;
+        margin-top: 40%;
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+
+      }
+    }
+  }
+
 }
-@media (max-width: 767.98px) {
-  min-width: 90vw;
-  .card__outter{
-    background-size: 100%;
-    background-position-x: 20vw;
-  }
-  .card__inner{
-    background-image: linear-gradient(to right, #fff, #fff, rgba(255,255,355,0));
-  }
-  .card__content{
-    width: 60%;
-  }
-}
-@media (max-width: 575.98px) {
-  // @extends &.waveko-card--vertical;
+
+.shop-card{
+  @extend .waveko-card;
   max-width: 480px;
   min-height: 480px;
+
   .card__outter{
+    background-size: 120%;
     background-position-x: center;
   }
   .card__inner{
+    background-position-y: top;
     background-image: linear-gradient(to top, #fff, #fff, rgba(255,255,355,0));
     .card__content{
       width: 100%;
       margin-top: 40%;
       margin-left: 16px;
       margin-right: 16px;
-      text-align: center;
+      text-align: left;
 
     }
   }
-}
+  @media (max-width: 992px) {
+    min-width: 40vw;
+
+    .card__outter{
+      background-size: 100%;
+      background-position-x: center;
+      background-position-y: top;
+    }
+    .card__inner{
+      /*background-image: linear-gradient(to right, #fff, #fff, rgba(255,255,355,0));*/
+    }
+    .card__content{
+      width: 60%;
+    }
+  }
+
 
 }

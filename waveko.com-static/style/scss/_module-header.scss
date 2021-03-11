@@ -1,5 +1,6 @@
 .waveko-v2{
   header.waveko_header{
+    padding: 0;
     // Base
     .waveko-logo{
       background-image: url('../assets/images/logo-dark-alt.svg');
@@ -16,6 +17,7 @@
     // Layout
     .waveko_header__top-bar{
       background-color: #222;
+      margin: 0;
       .waveko_header-nav--secondary{
         display: flex;
         justify-content: space-between;
@@ -30,7 +32,8 @@
     }
     .waveko_header__main{
       background: $dark;
-      margin-top: 8px;
+      padding-top: 16px;
+      padding-bottom: 16px;
       .menu-waveko-global-primary-container{
         width: 100%;
         .waveko_header-nav--primary{

@@ -55,8 +55,9 @@
   .home__shop{
     .shop__items__carousel{
       width: 75%;
-      .waveko-card{
-        margin: 0 16px;
+      .shop-card{
+        // margin: 0 16px;
+        margin-left: 32px;
       }
     }
     .shop-items__arrow{
@@ -81,7 +82,7 @@
         margin-left: 1rem;
         .waveko-card{
           margin: 0 16px;
-          padding-left: 1rem;
+          // padding-left: 1rem;
           max-width: 280px;
 
         }
