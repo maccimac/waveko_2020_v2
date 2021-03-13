@@ -1,6 +1,7 @@
 
 function init(){
   Home.initSlickCarousels();
+  Shop.initSlickCarousels()
 
 }
 
@@ -26,9 +27,33 @@ var Home = {
       autoplaySpeed: 4000,
       // dots: true,
       variableWidth: true,
-      prevArrow: $('#homeShopCarouselPrev'),
-      nextArrow: $('#homeShopCarouselNext'),
+      prevArrow: $('.home__shop__carousel__prev'),
+      nextArrow: $('.home__shop__carousel__next'),
     });
+  }
+}
+
+var Shop = {
+  initSlickCarousels: ()=>{
+    $('#shopPrimary').slick({
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     arrows: false,
+     fade: true,
+     asNavFor: '#shopOptions'
+    });
+    $('#shopOptions').slick({
+     slidesToShow: 3,
+     slidesToScroll: 1,
+     asNavFor: '#shopPrimary',
+     arrows: true,
+     autoplay: true,
+     autoplaySpeed: 2000,
+     // dots: true,
+     centerMode: true,
+     focusOnSelect: true
+    });
+
   }
 }
 

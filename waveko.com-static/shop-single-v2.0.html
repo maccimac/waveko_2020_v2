@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WaveKo Home - Board Sling</title>
+    <title>WaveKo - Board Sling</title>
     <!-- <link rel="stylesheet" href="./style/vendors/bootstrap/bootstrap.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/vendors/slick/slick.css">
@@ -83,45 +83,308 @@
             </div>
 
     			</div>
-          <div class="mh-320">
+          <div class="mh-360">
             &nbsp;
           </div>
 
     		</div>
 
     	</section>
-      <section class="shop__atf-2">
+      <section class="shop__atf-2 product__main">
         <div class="container">
-          <div class="row">
-            <div class="col-6">
-              <img src="./assets/images/bg-shaka.jpg" alt="" class="w-100">
-            </div>
-            <div class="col-6">
-              <span class="badge badge-waveko-light badge-sm mb-2">
-                Shop
+          <div class="row d-block d-md-none">
+            <div class="product__title">
+              <span class="badge badge-waveko-lime badge-sm mb-2">
+                SHOP
               </span>
-              <h4>
+              <span class="badge badge-waveko-light badge-sm mb-2 badge-text-transform-none">
+                Surf
+              </span>
+              <h1>
                 Board Sling
-              </h4>
+              </h1>
               <span><strong>P 1999</strong> / <s>P 2500</s></span>
-              <p class="mb-3">
+            </div>
+
+          </div>
+          <div class="row d-flex align-items-center">
+
+            <div class="col-md-6">
+              <div id="shopPrimary" class="mb-3" >
+                <div class="mh-320 bg-size-cover bg-size-cover rounded-16" style="background-image:url('./assets/images/boardsling-4.jpg')">
+                </div>
+                <div class="mh-320 bg-size-cover rounded-16" style="background-image:url('./assets/images/boardsling-2.jpg')">
+                </div>
+                <div class="mh-320 bg-size-cover rounded-16" style="background-image:url('./assets/images/boardsling-3.jpg')">
+                </div>
+                <div class="mh-320 bg-size-cover rounded-16" style="background-image:url('./assets/images/wraptop-a-1.jpg')">
+                </div>
+                <div class="mh-320 bg-size-cover rounded-16" style="background-image:url('./assets/images/wraptop-b-2.jpg')">
+                </div>
+
+              </div>
+              <div id="shopOptions">
+                <!-- class="product__image__options d-flex" -->
+                <div class="mh-96 rounded-8 mx-1 bg-size-cover " style="background-image:url('./assets/images/boardsling-4.jpg')">
+                </div>
+                <div class="mh-96 rounded-8 mx-1 bg-size-cover" style="background-image:url('./assets/images/boardsling-2.jpg')">
+                </div>
+                <div class="mh-96 rounded-8 mx-1 bg-size-cover" style="background-image:url('./assets/images/boardsling-3.jpg')">
+                </div>
+                <div class="mh-96 rounded-8 mx-1 bg-size-cover " style="background-image:url('./assets/images/boardsling-1.jpg')">
+                </div>
+                <div class="mh-96 rounded-8 mx-1 bg-size-cover" style="background-image:url('./assets/images/boardsling-6.jpg')">
+                </div>
+            <!--    <img src="./assets/images/boardsling-4.jpg" alt="" class="w-25"/>
+                <img src="./assets/images/boardsling-3.jpg" alt="" class="w-25"/>
+                <img src="./assets/images/boardsling-2.jpg" alt="" class="w-25"/>-->
+
+              </div>
+
+            </div>
+            <div class="col-md-6 p-3">
+              <div class="d-none d-md-block mb-4">
+                <span class="badge badge-waveko-lime badge-sm mb-2">
+                  SHOP
+                </span>
+                <span class="badge badge-waveko-light badge-sm mb-2">
+                  Surf
+                </span>
+                <h1 class="bold">
+                  Board Sling
+                </h1>
+                <span><strong>P 1999</strong> / <s>P 2500</s></span>
+              </div>
+              <p class="description mb-5">
                 We are a community-minded surf brand offering well-thought-of, made-with-love beach products manufactured thru Filipino craftsmanship.
               </p>
 
-              <a href="<?php the_permalink();?>" class="btn btn-waveko-lime btn-sm mr-2 mb-1">
-                <i class="fas fa-eye mr-1"></i> Learn more
-              </a>
-              <a href="<?php the_permalink();?>" class="btn btn-waveko-navy-outline btn-sm mb-1">
-                <i class="fas fa-cart-plus mr-1"></i> Add to cart
+              <div class="my-3">
+                <h6>Choose a color</h6>
+                <span class="badge badge-waveko-light-outline mr-2">
+                  Midnight Black
+                </span>
+                <span class="badge badge-waveko-navy-outline mr-2">
+                  Classic Blue
+                </span>
+                <span class="badge badge-waveko-light-outline mr-2">
+                  Midnight Black
+                </span>
+
+
+              </div>
+
+
+              <a href="<?php the_permalink();?>" class="btn btn-waveko-lime btn-lg mb-1 px-5">
+                Add to cart
+                <i class="fas fa-cart-plus ml-3"></i>
               </a>
 
             </div>
 
           </div>
-
         </div>
 
+
       </section>
+      <div class="mh-120">
+      </div>
+      <section class="wave-gray">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+              <h6>More details</h6>
+              <p class="text-waveko-strong text-black text-18">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+              </p>
+              <p>
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+              </p>
+              <p>
+                Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <div class="mh-360 bg-size-cover rounded-16" style="background-image:url('./assets/images/boardsling-3.jpg')">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="bg-color-gray wave-white">
+        <div class="mh-160">
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="shop__intro text-center col-10 col-md-8 mx-auto">
+                <h4>Quote <span class="excerpt"> — Something something</span></h4>
+            </div>
+          </div>
+        </div>
+        <div class="mh-96">
+        </div>
+      </section>
+
+      <section class="" style="margin-top:-60px">
+
+        <div class="container-fluid px-5">
+          <div class="row">
+            <h6>Related Products</h6>
+          </div>
+          <div class="row">
+
+            <div class="col-6 col-lg-3">
+              <div class="shop-card">
+                <div class="card__outter no-banner" style="background-image: url('./assets/images/boardsling-5.jpg') ">
+                  <div class="card__inner d-flex align-items-center p-3">
+                    <div class="card__content">
+                      <span class="badge badge-waveko-light badge-text-transform-none badge-sm mb-2">
+                        Lounge
+                      </span>
+                      <h4>
+                        Board Sling
+                      </h4>
+                      <span><strong>P 1999</strong> / <s>P 2500</s></span>
+                      <p class="mb-3">
+                        We are a community-minded surf brand offering well-thought-of, made-with-love beach products manufactured thru Filipino craftsmanship.
+                      </p>
+
+                      <a href="<?php the_permalink();?>" class="btn btn-waveko-lime btn-sm mr-2 mb-1">
+                        <i class="fas fa-eye mr-1"></i> Learn more
+                      </a>
+                      <a href="<?php the_permalink();?>" class="btn btn-waveko-navy-outline btn-sm mb-1">
+                        <i class="fas fa-cart-plus mr-1"></i> Add to cart
+                      </a>
+                    </div>
+                  </div>
+                </div>
+          		</div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+              <div class="shop-card">
+                <div class="card__outter no-banner" style="background-image: url('./assets/images/boardsling-4.jpg') ">
+                  <div class="card__inner d-flex align-items-center p-3">
+                    <div class="card__content">
+                      <span class="badge badge-waveko-light badge-text-transform-none badge-sm mb-2">
+                        Everyday
+                      </span>
+                      <span class="badge badge-waveko-light badge-text-transform-none badge-sm mb-2">
+                        Surf
+                      </span>
+                      <h4>
+                        Sunscreen
+                      </h4>
+                      <span><strong>P 1999</strong> / <s>P 2500</s></span>
+                      <p class="mb-3">
+                        We are a community-minded surf brand offering well-thought-of, made-with-love beach products manufactured thru Filipino craftsmanship.
+                      </p>
+
+                      <a href="<?php the_permalink();?>" class="btn btn-waveko-lime btn-sm mr-2 mb-1">
+                        <i class="fas fa-eye mr-1"></i> Learn more
+                      </a>
+                      <a href="<?php the_permalink();?>" class="btn btn-waveko-navy-outline btn-sm mb-1">
+                        <i class="fas fa-cart-plus mr-1"></i> Add to cart
+                      </a>
+                    </div>
+                  </div>
+                </div>
+          		</div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+              <div class="shop-card">
+                <div class="card__outter no-banner" style="background-image: url('./assets/images/boardsling-3.jpg') ">
+                  <div class="card__inner d-flex align-items-center p-3">
+                    <div class="card__content">
+                      <span class="badge badge-waveko-light badge-text-transform-none badge-sm mb-2">
+                        Surf
+                      </span>
+                      <h4>
+                        Board Sling
+                      </h4>
+                      <span><strong>P 1999</strong> / <s>P 2500</s></span>
+                      <p class="mb-3">
+                        We are a community-minded surf brand offering well-thought-of, made-with-love beach products manufactured thru Filipino craftsmanship.
+                      </p>
+
+                      <a href="<?php the_permalink();?>" class="btn btn-waveko-lime btn-sm mr-2 mb-1">
+                        <i class="fas fa-eye mr-1"></i> Learn more
+                      </a>
+                      <a href="<?php the_permalink();?>" class="btn btn-waveko-navy-outline btn-sm mb-1">
+                        <i class="fas fa-cart-plus mr-1"></i> Add to cart
+                      </a>
+                    </div>
+                  </div>
+                </div>
+          		</div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+              <div class="shop-card">
+                <div class="card__outter no-banner" style="background-image: url('./assets/images/sample-image-2.jpg') ">
+                  <div class="card__inner d-flex align-items-center p-3">
+                    <div class="card__content">
+                      <span class="badge badge-waveko-light badge-text-transform-none badge-sm mb-2">
+                        Everyday
+                      </span>
+                      <span class="badge badge-waveko-light badge-text-transform-none badge-sm mb-2">
+                        Lounge
+                      </span>
+                      <h4>
+                        Tote Bag
+                      </h4>
+                      <span><strong>P 1999</strong> / <s>P 2500</s></span>
+                      <p class="mb-3">
+                        We are a community-minded surf brand offering well-thought-of, made-with-love beach products manufactured thru Filipino craftsmanship.
+                      </p>
+
+                      <a href="<?php the_permalink();?>" class="btn btn-waveko-lime btn-sm mr-2 mb-1">
+                        <i class="fas fa-eye mr-1"></i> Learn more
+                      </a>
+                      <a href="<?php the_permalink();?>" class="btn btn-waveko-navy-outline btn-sm mb-1">
+                        <i class="fas fa-cart-plus mr-1"></i> Add to cart
+                      </a>
+                    </div>
+                  </div>
+                </div>
+          		</div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+        <div class="mh-120">
+        </div>
+      </section>
+      <section class="footer p-5 mb-0 d-flex align-items-center">
+    <div class="d-inline-block mx-auto text-lime text-center">
+      <h6 class="text-light">WAVEKO.COM / Surf Brand Philippines / <i class="fas fa-copyright"></i> 2020</h6>
+      <div class="d-block">
+        <div class="header__contacts d-flex align-items-center m-auto">
+          <div class="email">
+            <i class="far fa-envelope-open"></i>
+            <span>connect@waveko.com</span>
+          </div>
+          <div class="header__line"></div>
+          <div class="mobile">
+            <i class="fas fa-mobile-alt"></i>
+            <span>+63 961 341 0021</span>
+          </div>
+          <div class="header__line"></div>
+          <div class="social-media">
+            <a href="https://www.facebook.com/wavekoph" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://instagram.com/waveko_ph" target="_blank"><i class="fab fa-instagram"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
 
 

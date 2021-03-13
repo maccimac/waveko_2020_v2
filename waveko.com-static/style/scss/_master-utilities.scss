@@ -1,5 +1,10 @@
 /* UTILITIES */
 
+/* Separator
+Text Color and Size
+Spacing
+Background*/
+
 /* Separators */
 .separator-bot{
   margin-bottom: -32px;
@@ -35,24 +40,6 @@
 
 
 /* Text Color and Size*/
-/*
-    $dark: #222;
-    $mid: #666666;
-
-    $slate-mid: #8DA2A0;
-    $slate-light: #98ACAA;
-    $slate-lighter: #B9CECC;
-
-    $sea-dark: #044D71;
-    $sea-mid: #007496;
-
-    $sky: #E7F0F5;
-    $turquoise: #6BC8C1;
-
-    $lime: #BBD630;
-
-    $navy: #044D71;
-*/
 .text-lime{
   color: $lime;
 }
@@ -97,13 +84,13 @@
 }
 
 /* Spacing */
-.font-18{
+.font-18, .text-18{
   font-size: 18px;
 }
-.font-24{
+.font-24, .text-24{
   font-size: 24px;
 }
-.font-32{
+.font-32, .text-32{
   font-size: 32px;
 }
 
@@ -121,6 +108,12 @@
 }
 .mh-64{
   min-height: 64px;
+}
+.mh-80{
+  min-height: 80px;
+}
+.mh-96{
+  min-height: 96px;
 }
 .mh-120{
   min-height: 120px;
@@ -142,4 +135,33 @@
 }
 .mh-600{
   min-height: 600px;
+}
+
+/*Background*/
+
+.bg-size-cover{
+  background-size: cover;
+  background-position: center;
+}
+.bg-size-contain{
+  background-size: contain;
+  background-position: center;
+}
+
+.bg-size-100{
+  background-size: 100%;
+  background-position: center;
+}
+
+.bg-color-gray{
+  background-color: #f6f6f6;
+}
+
+/* Radius Border */
+.rounded-8{
+  border-radius: 8px;
+}
+
+.rounded-16{
+  border-radius: 16px;
 }

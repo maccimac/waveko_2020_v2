@@ -5,6 +5,7 @@
   min-height: 360px;
   margin-bottom: 24px !important;
   outline: none;
+  background-color: #fff;
   &:hover{
     box-shadow: 0 12px 12px #ddd;
   }
@@ -24,7 +25,6 @@
         margin-left: 16px;
         margin-right: 16px;
         text-align: center;
-
       }
     }
   }
@@ -51,6 +51,7 @@
         width: 50%;
         background-image: #fff;
         margin-left: 16px;
+        margin-bottom: 24px;
       .data__type{
 
       }
@@ -114,11 +115,13 @@
 .shop-card{
   @extend .waveko-card;
   max-width: 480px;
-  min-height: 480px;
+  min-height: 420px;
+  background-color: #fff;
 
   .card__outter{
     background-size: 120%;
     background-position-x: center;
+    background-position-y: top;
   }
   .card__inner{
     background-position-y: top;

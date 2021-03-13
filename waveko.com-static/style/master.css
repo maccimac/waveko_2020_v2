@@ -27,15 +27,13 @@ body {
 
 /* TYPOGRAPHY */
 h1 {
-  font-family: waveko-reg;
+  font-family: waveko-bold;
   font-weight: 100;
   font-size: 32px;
   line-height: 48px;
 }
-
-h1.entry-title {
+h1.entry-title, h1.bold {
   font-family: waveko-bold;
-  font-size: 48px;
   color: #222;
 }
 
@@ -72,14 +70,18 @@ h5 {
 
 h6 {
   font-family: waveko-bold;
-  /* text-transform: uppercase; */
-  font-size: 16px;
-  color: #222;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #B9CECC;
+  letter-spacing: 1.4px;
 }
 
 p {
   font-family: "IBM Plex Sans", "Lucida Grande", sans-serif;
   font-size: 14px;
+}
+p .subheader {
+  font-size: 16px;
 }
 
 span {
@@ -93,16 +95,22 @@ strong {
 a {
   color: #6BC8C1;
 }
+a.important-link {
+  font-family: waveko-bold;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  padding: 2px;
+}
 
 @media (max-width: 992px) {
-  h1, h2, h3 {
+  h1, h2, h3, h4 {
     font-size: 22px;
+    /*.excerpt{
+      font-size: 16px;
+    }*/
   }
-  h1 .entry-title, h2 .entry-title, h3 .entry-title {
+  h1 .entry-title, h2 .entry-title, h3 .entry-title, h4 .entry-title {
     font-size: 24px;
-  }
-  h1 .excerpt, h2 .excerpt, h3 .excerpt {
-    font-size: 16px;
   }
 
   p {
@@ -163,6 +171,9 @@ a {
   letter-spacing: 1.6px;
   font-family: waveko-bold !important;
 }
+.badge.badge-text-transform-none {
+  text-transform: none;
+}
 .badge.badge-waveko-lime {
   font-family: waveko-med;
   background-color: #BBD630;
@@ -178,14 +189,31 @@ a {
   background-color: #E7F0F5;
   color: #8DA2A0;
 }
+.badge.badge-waveko-light-outline {
+  font-family: waveko-med;
+  background-color: transparent;
+  border: 1px solid #8DA2A0;
+  color: #8DA2A0;
+}
 .badge.badge-waveko-navy {
   font-family: waveko-med;
   font-weight: normal;
   background-color: #044D71;
   color: #fff;
 }
+.badge.badge-waveko-navy-outline {
+  font-family: waveko-med;
+  font-weight: normal;
+  background-color: transparent;
+  border: 1px solid #044D71;
+  color: #044D71;
+}
 
 /* UTILITIES */
+/* Separator
+Text Color and Size
+Spacing
+Background*/
 /* Separators */
 .separator-bot {
   margin-bottom: -32px;
@@ -220,24 +248,6 @@ a {
 }
 
 /* Text Color and Size*/
-/*
-    $dark: #222;
-    $mid: #666666;
-
-    $slate-mid: #8DA2A0;
-    $slate-light: #98ACAA;
-    $slate-lighter: #B9CECC;
-
-    $sea-dark: #044D71;
-    $sea-mid: #007496;
-
-    $sky: #E7F0F5;
-    $turquoise: #6BC8C1;
-
-    $lime: #BBD630;
-
-    $navy: #044D71;
-*/
 .text-lime {
   color: #BBD630;
 }
@@ -291,15 +301,15 @@ a {
 }
 
 /* Spacing */
-.font-18 {
+.font-18, .text-18 {
   font-size: 18px;
 }
 
-.font-24 {
+.font-24, .text-24 {
   font-size: 24px;
 }
 
-.font-32 {
+.font-32, .text-32 {
   font-size: 32px;
 }
 
@@ -321,6 +331,14 @@ a {
 
 .mh-64 {
   min-height: 64px;
+}
+
+.mh-80 {
+  min-height: 80px;
+}
+
+.mh-96 {
+  min-height: 96px;
 }
 
 .mh-120 {
@@ -351,6 +369,35 @@ a {
   min-height: 600px;
 }
 
+/*Background*/
+.bg-size-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-size-contain {
+  background-size: contain;
+  background-position: center;
+}
+
+.bg-size-100 {
+  background-size: 100%;
+  background-position: center;
+}
+
+.bg-color-gray {
+  background-color: #f6f6f6;
+}
+
+/* Radius Border */
+.rounded-8 {
+  border-radius: 8px;
+}
+
+.rounded-16 {
+  border-radius: 16px;
+}
+
 .waveko-v2 header.waveko_header {
   padding: 0;
 }
@@ -369,6 +416,7 @@ a {
 .waveko-v2 header.waveko_header .waveko_header__top-bar {
   background-color: #222;
   margin: 0;
+  border-bottom: 1px solid #333;
 }
 .waveko-v2 header.waveko_header .waveko_header__top-bar .waveko_header-nav--secondary {
   display: flex;
@@ -477,6 +525,7 @@ section.footer {
   min-height: 360px;
   margin-bottom: 24px !important;
   outline: none;
+  background-color: #fff;
 }
 .waveko-card:hover, .shop-card:hover {
   box-shadow: 0 12px 12px #ddd;
@@ -518,6 +567,7 @@ section.footer {
   width: 50%;
   background-image: #fff;
   margin-left: 16px;
+  margin-bottom: 24px;
 }
 @media (max-width: 991.98px) {
   .waveko-card, .shop-card {
@@ -566,11 +616,13 @@ section.footer {
 
 .shop-card {
   max-width: 480px;
-  min-height: 480px;
+  min-height: 420px;
+  background-color: #fff;
 }
 .shop-card .card__outter {
   background-size: 120%;
   background-position-x: center;
+  background-position-y: top;
 }
 .shop-card .card__inner {
   background-position-y: top;
@@ -683,6 +735,15 @@ section.footer {
 }
 .waveko-v2.waveko-template--shop section.shop__atf-2 {
   margin-top: -240px;
+}
+.waveko-v2.waveko-template--shop .product__main .product__image__primary {
+  background-size: cover;
+}
+.waveko-v2.waveko-template--shop .description {
+  font-family: waveko-light;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #8DA2A0;
 }
 .find-me {
   border: 1px solid #BBD630;

@@ -14,6 +14,19 @@
 
     }
 
+    .product__main{
+      .product__image__primary{
+        background-size: cover;
+      }
+    }
+
+    .description{
+      font-family: waveko-light;
+      font-size: 16px;
+      line-height: 1.4;
+      color: $slate-mid;
+    }
+
   }
 
   &.waveko-template--shop-single{
